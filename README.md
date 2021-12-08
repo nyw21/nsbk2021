@@ -5,6 +5,8 @@ credit-predict
 
 Run finance_classifier.py directly to train on cs-training.csv and make prediction to cs-test.csv.
 Note: pls. make sure cs-training.csv and cs-test.csv are in directory: ../GiveMeSomeCredit/.
+Python version: 3.6.10
+Sklearn version: 0.23.1
 
 Data Analysis:
 1. Check for NULL calues. (Null values ratio: train: MonthlyIncome (19.82%) NumberOfDependents (2.62%) ) NULL values are filled by various strateties such as mean and zero. Zero has a better performance.
@@ -24,3 +26,6 @@ Build classifier:
 Evaluation:
 1. Perform 5-fold cross validation on the training data.
 2. Evaluated using AUC score. Average score of 5 folds is 0.859.
+
+Prediction:
+Predictions to data in cs-test.csv are stored in result.csv.
